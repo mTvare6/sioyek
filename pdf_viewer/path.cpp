@@ -8,7 +8,6 @@ Path::Path() : Path(L"")
 
 Path::Path(std::wstring pathname)
 {
-	pathname = strip_string(pathname);
 	canon_path = get_canonical_path(pathname);
 }
 
